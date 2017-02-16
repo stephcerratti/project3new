@@ -41,4 +41,9 @@ export class JournalComponent implements OnInit {
   	    });
   }
 
+     //initCarousel(){
+   
+  
+//}
+
 }
