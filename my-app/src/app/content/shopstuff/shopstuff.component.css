@@ -1,0 +1,51 @@
+.uppercase {
+	text-transform: uppercase;
+}
+
+.white-text {
+	color: white;
+}
+
+.orange-text {
+	color: #d99054;
+}
+
+.font-novecento {
+	font-family: 'novecento';
+}
+
+h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 40px auto;
+}
+
+.shop-stuff-flex-container {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.shop-stuff-flex-child {
+	text-align: center;
+	border: 2px solid grey;
+	padding: 8px;
+	width: 22%;
+}
+
+.shop-stuff-image {
+	height: 60px;
+	padding-bottom: 5px;
+}
+
+.product-button {
+	border-radius: 0%;
+	padding: 5px;
+	font-size: 12px;
+	margin-top: 9px;
+	background: #248A83;
+	border: none;
+	width: 100px;
+	height: 30px;
+}

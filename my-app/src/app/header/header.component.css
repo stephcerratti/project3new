@@ -1,0 +1,43 @@
+.uppercase {
+	text-transform: uppercase;
+}
+
+.white-text {
+	color: white;
+}
+
+.orange-text {
+	color: #d99054;
+}
+
+.font-novecento {
+	font-family: 'novecento';
+}
+
+.header-background {
+	background: url(assets/images/logos/inhabitent-logo-full.svg) center no-repeat, linear-gradient(rgba(0,0,0,.3) 100%, transparent), url(assets/images/home-hero.jpg) no-repeat;
+	background-size: 25%, cover, cover;
+	height: 80vh;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-logo {
+	height: 35px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	padding: 3px;
+}
+
+.main-logo {
+	margin: 0 auto;
+}
