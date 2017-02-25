@@ -1,7 +1,13 @@
-<!-- <link rel="stylesheet" type="text/css" href="owl.carousel.min.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="owl.theme.default.min.css"> -->
-
 <section class="journal section-format">
 	<h3 class="section-title uppercase">Inhabitent Journal</h3>
-	<div class="owl-carousel owl-theme"></div>
+	<div class="owl-carousel owl-theme">
+		<div *ngFor = "let journal of journalEntries">
+			<img src={{journal.image}}>
+			<div>
+				<h3>{{journal.date}} / {{journal.categories.count}} comments</h3>
+				<h2>{{journal.title}}</h2>
+				<button>Read Entry</button>
+			</div>
+		</div>
+	</div>
 </section>

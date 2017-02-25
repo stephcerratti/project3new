@@ -29,9 +29,14 @@ h2 {
 
 .shop-stuff-flex-child {
 	text-align: center;
-	border: 2px solid grey;
+	border: 1px solid grey;
+	border-top: 5px solid grey;
 	padding: 8px;
 	width: 22%;
+}
+
+.shop-stuff-flex-child:hover {
+	border-color: #d99054;
 }
 
 .shop-stuff-image {

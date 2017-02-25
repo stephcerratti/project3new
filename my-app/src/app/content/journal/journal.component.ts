@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { Journal } from './journal';
 import { JournalService } from './journal.service';
 
+declare var $:any;
+
 @Component({
   moduleId: module.id,
   selector: 'app-journal',
@@ -38,12 +40,29 @@ export class JournalComponent implements OnInit {
         console.log(this.journalEntries);
         console.log("***** in journal.component.ts callback *****");
         */
-  	    });
+  	    }).then(run =>{this.owlCarousel();});   
   }
-
-     //initCarousel(){
-   
-  
-//}
+    owlCarousel(){
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+          rtl:true,
+          loop:true,
+          margin:10,
+          nav:true,
+          autoplay:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:4
+              }
+          }
+        });
+      });
+   }
 
 }
