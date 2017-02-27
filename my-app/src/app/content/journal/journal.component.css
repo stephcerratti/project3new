@@ -1,0 +1,56 @@
+.uppercase {
+	text-transform: uppercase;
+}
+
+.white-text {
+	color: white;
+}
+
+.orange-text {
+	color: #d99054;
+}
+
+.green-text {
+	color: #248A83;
+}
+
+.light-grey-text {
+	color: #a1a1a1;
+}
+
+.grey-text{
+	color: #808080;
+
+}
+
+.font-novecento {
+	font-family: 'novecento';
+}
+
+.journal-pic {
+	height: 175px;
+}
+
+.journal-entry {
+	border: 1px solid;
+	border-color: #a1a1a1;
+	padding: 5px;
+	text-align: left;
+	margin-top: 5px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 40px auto;
+	padding: 5px;
+}
+
+.read {
+	padding: 10px;
+	border: solid 1px;
+	border-color: #a1a1a1;
+	background-color: white;
+	color: ;
+	margin: 7px auto;
+}

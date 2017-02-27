@@ -1,12 +1,12 @@
 <section class="journal section-format">
-	<h3 class="section-title uppercase">Inhabitent Journal</h3>
+	<h2 class="section-title uppercase">Inhabitent Journal</h2>
 	<div class="owl-carousel owl-theme">
 		<div *ngFor = "let journal of journalEntries">
-			<img src={{journal.image}}>
-			<div>
-				<h3>{{journal.date}} / {{journal.categories.count}} comments</h3>
-				<h2>{{journal.title}}</h2>
-				<button>Read Entry</button>
+			<img class="journal-pic" src={{journal.image}}>
+			<div class="journal-entry">
+				<h4 class="light-grey-text">{{journal.date}} / {{journal.categories.count}} comments</h4>
+				<h3 class="green-text uppercase">{{journal.title}}</h3>
+				<button class= "read uppercase light-grey-text">Read Entry</button>
 			</div>
 		</div>
 	</div>

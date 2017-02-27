@@ -8,5 +8,4 @@ export class Journal {
 	content: string = "";
 	date: string = "";
 	categories: string[] = [];
-
 }

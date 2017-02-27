@@ -63,4 +63,63 @@ export class JournalService {
     	return Promise.reject(error.message || error);
     }
 
+  //   addJournal(parameters:string):Promise<Journal>{
+  //   console.log("***** adding journal *****");
+  //   let postURL = `${this.postJournalUrl}params=${parameters}`;
+  //   console.log(postURL);
+  //   let postSubmission = this.http.post(postURL,parameters,{headers:this.headers});
+  //   let postSubmissionAsPromise = postSubmission.toPromise();
+  //   let submissionResponse = (result) => result.json().data;
+  //   let whatToDoWhenPromiseIsReturned = postSubmissionAsPromise.then(submissionResponse);
+  //   let theWholePromise = whatToDoWhenPromiseIsReturned.catch(this.processError);
+  //   return theWholePromise;
+  // }
+
+  // getSingleJournal(ID:number):Promise<Journal>{
+  //   let getRequest = this.http.get(this.journalUrl);
+  //   console.log(getRequest);
+  //   let requestAsPromise = getRequest.toPromise();
+  //   let extractSingleJournal = (response:any):any => {
+  //     let responseAsJson:any = response.json();
+  //     console.log(responseAsJson); // should be array
+  //     /* // one technique can employ the array 'filter' function
+  //     let foundJournal:Journal = responseAsJson.filter(
+  //       function(currentObject){
+  //         return currentObject.ID === ID;
+  //       }
+  //     )
+  //     */
+  //     // this technique works too, but not as efficient
+  //     // for (let çurrentObject in responseAsJson){
+  //     //     let potentialEntry = responseAsJson[çurrentObject];
+  //     //   if ( (potentialEntry as Object).hasOwnProperty("ID") &&
+  //     //       ((potentialEntry as Journal).ID === ID) ) {
+  //     //       return potentialEntry as Journal;
+  //         // end if
+  //       }
+  //         // end for loop
+  //     }
+  //     // end extractSingleJournalFunction
+  //   };
+  //   let taskToDoWhenPromiseIsReturned = extractSingleJournal;
+  //   let theWholePromise = requestAsPromise.then(taskToDoWhenPromiseIsReturned).catch(this.processError());
+
+  //   return theWholePromise;
+
+  // }
+
+
+/*
+* In all the above methods, I have broken down "theWholePromise" that is returned into individual steps.
+* Normally, you would return the whole thing in one statement, i.e.
+*
+*   return this.http.-get or post-(this.journalUrl, any-parameters-as-needed).toPromise().then(dostuffWhenthePromiseIsFulfilled).catch(callAFunctionThatdisplaysAnError);
+*
+* */
+
+
 }
+
+
+
+
